@@ -185,7 +185,7 @@ eval("/* (ignored) */\n\n//# sourceURL=webpack://magvaytest/fs_(ignored)?");
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

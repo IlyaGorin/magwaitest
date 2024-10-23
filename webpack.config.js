@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/',
+    publicPath: './',
     assetModuleFilename: 'images/[name].[contenthash][ext]',
   },
   mode: 'development',

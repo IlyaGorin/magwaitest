@@ -1,0 +1,24 @@
+- const menuItems = [
+-   { title: 'УСЛУГИ', href: '#' },
+-   { title: 'АБОНЕМЕНТЫ', href: '#' },
+-   { title: 'ПОЧЕМУ МЫ', href: '#' },
+-   { title: 'ОБОРУДОВАНИЕ', href: '#' },
+-   { title: 'АКЦИИ', href: '#' },
+-   { title: 'FAQ', href: '#' },
+-   { title: 'КОНТАКТЫ', href: '#' }
+- ]
+
+div.page-header__navigation.navigation
+   div.navigation__wrapper
+      nav.navigation__menu(aria-label='Основная навигация')
+         ul.navigation__list
+            each item in menuItems
+               li: a.navigation__link(href=item.href, data-text=item.title) #{item.title}
+      ul.navigation-btns 
+         li
+            a.navigation-btns__phone-link(href="tel:+") 
+               span
+         li
+            +primary-button('ОСТАВИТЬ ЗАЯВКУ', 'parallelogram')
+
+

@@ -1,0 +1,33 @@
+@mixin montserrat($weight: 400, $font-size: 14px, $line-height: 24px) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin mulish($weight: 600, $font-size: 14px, $line-height: 18px) {
+  font-family: 'Mulish', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin media-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-min(768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include media-min(1400px) {
+    @content;
+  }
+}

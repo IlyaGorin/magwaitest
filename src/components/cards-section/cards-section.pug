@@ -1,0 +1,9 @@
+section.cards-section
+  div.cards-section__inner
+    +title('Карточки', 'h2', 'cards-section__title')
+
+    div.cards-section__cards-list
+      include ../../components/card/card
+    div.cards-section__load-button
+       +primary-button('ЗАГРУЗИТЬ ЕЩЕ', 'parallelogram')
+

@@ -1,0 +1,23 @@
+.card-button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  height: 50px;
+  background-color: $btn-card;
+  @include mulish();
+  color: $main-white;
+  overflow: hidden;
+
+  @include desktop {
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: $text-black;
+      border: 2px solid $btn-card;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+}

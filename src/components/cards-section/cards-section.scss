@@ -1,0 +1,58 @@
+.cards-section {
+  padding: 44px 15px;
+
+  @include tablet {
+    padding: 44px 40px 156px;
+  }
+
+  @include desktop {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 133px 100px 256px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $text-white;
+
+    @include tablet {
+      margin-bottom: 38px;
+      padding-left: 9px;
+    }
+
+    @include desktop {
+      margin-bottom: 52px;
+      padding-left: 0;
+    }
+  }
+
+  &__cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 38px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      margin-bottom: 60px;
+    }
+
+    @include desktop {
+      gap: 30px;
+    }
+  }
+
+  &__load-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .primary-button {
+      transform: skew(-17deg) translateX(-6px);
+    }
+  }
+}

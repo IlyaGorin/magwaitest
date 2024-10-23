@@ -1,0 +1,58 @@
+.burger-button {
+  position: relative;
+  left: 4px;
+  top: -1px;
+  width: 31px;
+  height: 18px;
+
+  @include desktop {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: $main-white;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 21px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $main-white;
+      transition: all 0.3s ease;
+    }
+
+    &::after {
+      top: -7px;
+      width: 15px;
+    }
+  }
+
+  &.open span {
+    background-color: transparent;
+
+    &::before {
+      width: 100%;
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    &::after {
+      width: 100%;
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+}

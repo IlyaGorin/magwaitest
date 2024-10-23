@@ -1,0 +1,10 @@
+template.card-template
+  article.card
+    div.card__img
+      img(src=require('@images/1.jpg'), alt="Картинка карточки")
+    div.card__inner
+      +title('bridge', 'h3', 'card__title')
+      p.card__desc How to increase your productivity with a Music
+      p.card__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…
+      p.card__info Posted by <b>Eugenia</b>, on July  24, 2019
+      +card-button('Continue reading', 'card__button')

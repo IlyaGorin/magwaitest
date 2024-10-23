@@ -3,28 +3,28 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Точка входа для JS
+  entry: './src/index.js',
   output: {
-    filename: 'bundle.js', // Итоговый файл с собранным JS
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    assetModuleFilename: 'images/[name].[contenthash][ext]', // Путь для изображений
+    assetModuleFilename: 'images/[name].[contenthash][ext]',
   },
   mode: 'development',
   module: {
     rules: [
       {
-        test: /\.js$/, // Правило для всех файлов с расширением .js
-        exclude: /node_modules/, // Исключаем node_modules
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Используем Babel для транспиляции
+          loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'], // Пресет для современного JS
+            presets: ['@babel/preset-env'],
           },
         },
       },
       {
-        test: /\.scss$/, // Обработка SCSS
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -41,11 +41,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.pug$/, // Обработка Pug-файлов
+        test: /\.pug$/,
         loader: 'pug-loader',
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i, // Обработка изображений
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
       },
     ],
@@ -59,13 +59,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.pug', // Шаблон для HTML
+      template: './src/index.pug',
       filename: 'index.html',
       inject: true,
       minify: false,
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css', // Вывод итогового CSS
+      filename: '[name].css',
     }),
   ],
   devServer: {

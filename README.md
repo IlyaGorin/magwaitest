@@ -1,10 +1,20 @@
 # Тестовое задание для Магвай
 
-Стек pug + scss + js.
+Стек: PUG + SCSS + JS.
 
 ## Установка
 
 1. Клонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/ваш_никнейм/ваш_репозиторий.git
+   git clone https://github.com/IlyaGorin/magwaitest
+
+2. Установка:
+
+    ```bash
+    npm i
+
+3. Запуск
+    ```bash
+    npm start
+

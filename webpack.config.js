@@ -6,8 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    path: path.resolve(__dirname, 'docs'),
+    publicPath: './',
     assetModuleFilename: 'images/[name].[contenthash][ext]',
   },
   mode: 'development',
@@ -70,7 +70,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'docs'),
     },
     compress: true,
     port: 9000,

@@ -388,7 +388,7 @@ li {
 .hero {
   position: relative;
   height: 495px;
-  background: url(/images/hero-bg-360.8c10ea42debaddb6121a.jpg) no-repeat center;
+  background: url(./images/hero-bg-360.8c10ea42debaddb6121a.jpg) no-repeat center;
   background-size: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -396,7 +396,7 @@ li {
 @media (min-width: 768px) {
   .hero {
     height: 907px;
-    background-image: url(/images/hero-bg-768.57bc0c0911ce6acd48da.jpg);
+    background-image: url(./images/hero-bg-768.57bc0c0911ce6acd48da.jpg);
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -404,7 +404,7 @@ li {
 @media (min-width: 1400px) {
   .hero {
     height: 960px;
-    background-image: url(/images/hero-bg-1920.6bcdc40c87efb4d775fb.jpg);
+    background-image: url(./images/hero-bg-1920.6bcdc40c87efb4d775fb.jpg);
     background-position-y: -2px;
     background-attachment: fixed;
   }
@@ -541,7 +541,7 @@ li {
 .navigation-btns__phone-link span {
   width: 32px;
   height: 32px;
-  background: url(/images/icon-phone.5bfa9556dbe69fca90c0.svg) no-repeat center;
+  background: url(./images/icon-phone.5bfa9556dbe69fca90c0.svg) no-repeat center;
   background-size: contain;
   transform: skew(20deg);
 }
